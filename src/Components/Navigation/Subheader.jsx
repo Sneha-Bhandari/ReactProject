@@ -4,9 +4,9 @@ const Subheader = () => {
   return (
     
 
-    <div className="bg-[#589168] w-full h-10  items-center align-bottom ">
-      <div className="  ">
-        <div className="flex justify-between px-24 items-center">
+    <div className=" bg-[#589168] w-full h-10  items-center align-bottom ">
+      <div className=" w-11/12 mx-auto ">
+        <div className="flex justify-between items-center">
           <div className="flex  px-1 py-3 gap-3 ">
             <div className="flex gap-2 text-white ">
               <div className="w-4">
@@ -38,12 +38,12 @@ const Subheader = () => {
             </div>
           </div>
 
-          <div className="flex flex-row gap-4 text-white">
+          <div className="flex flex-row gap-6 text-white">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
                 className=""
               >
@@ -56,8 +56,8 @@ const Subheader = () => {
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -69,8 +69,8 @@ const Subheader = () => {
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
               >
                 <path

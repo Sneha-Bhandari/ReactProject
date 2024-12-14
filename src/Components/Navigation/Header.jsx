@@ -44,8 +44,8 @@ const Header = () => {
  ]
   
   return (
-    <div className='  bg-white flex gap-6 px-3 py-2 text-xl text-black border items-center justify-between h-20'>
-      <div className=' w-11/12 flex-row flex justify-between m-20'>
+    <div className='w-full bg-white flex gap-6 text-xl text-black border items-center py-5 justify-between'>
+      <div className=' w-11/12  mx-auto flex-row flex justify-between'>
 
      <div className='font-semibold text-center hover:text-[#589168]'>
       Counselor
@@ -54,7 +54,7 @@ const Header = () => {
       {
         navitem.map((val,i)=>{
           return(
-    <div className='hover:text-[#589168]'>
+    <div className='hover:text-[#589168] flex items-center'>
     <Link to={val.path}> {val.title}</Link>
     </div>
           )
