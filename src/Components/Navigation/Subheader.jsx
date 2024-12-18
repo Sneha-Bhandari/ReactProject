@@ -10,7 +10,7 @@ const Subheader = () => {
           <div className="flex  px-1 py-3 gap-3 ">
             <div className="flex gap-2 text-white ">
               <div className="w-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg className="cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
                     d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"
@@ -23,7 +23,7 @@ const Subheader = () => {
 
             <div className="flex flex-row gap-2 text-white">
               <div className="w-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg className="cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
                     d="M20.04 2.323c1.016-.355 1.992.621 1.637 1.637l-5.925 16.93c-.385 1.098-1.915 1.16-2.387.097l-2.859-6.432l4.024-4.025a.75.75 0 0 0-1.06-1.06l-4.025 4.024l-6.432-2.859c-1.063-.473-1-2.002.097-2.387z"
@@ -40,12 +40,12 @@ const Subheader = () => {
 
           <div className="flex flex-row gap-6 text-white">
             <div>
-              <svg
+              <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
-                className=""
+                className="cursor-pointer"
               >
                 <path
                   fill="currentColor"
@@ -55,6 +55,7 @@ const Subheader = () => {
             </div>
             <div>
               <svg
+              className="cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -67,7 +68,7 @@ const Subheader = () => {
               </svg>
             </div>
             <div>
-              <svg
+              <svg className="cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -81,6 +82,7 @@ const Subheader = () => {
             </div>
             <div>
               <svg
+              className="cursor-pointer"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
