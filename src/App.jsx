@@ -20,7 +20,7 @@ function App() {
   return (
     <>
     <Subheader></Subheader>
-      <Header></Header>
+      <Header/>
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
@@ -30,8 +30,7 @@ function App() {
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/contact' element={<Contact/>}/>
       </Routes>
-      
-<Footer1></Footer1>
+<Footer1/>
     </>
   )
 }

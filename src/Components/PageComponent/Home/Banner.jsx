@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { CiPlay1 } from "react-icons/ci";
 
 function Banner() {
   const images = [
@@ -29,25 +30,42 @@ function Banner() {
   }
 
   return (
-    <div className=" overflow-clip w-screen ">
-      <div className="flex">
-        <img className="h-fit w-fit absolute" src="./public/img.jpg" alt="" />
-        <div className="relative flex-col px-12 py-2  ">
-          <h1 className="text-7xl w-2/3 my-24 ">Counseling For Your Better Life</h1>
-          <p className="">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
-          </p>
+    <div className="relative h-screen">
+      <img
+        className="h-screen fixed -z-10 top-0 left-0 w-full object-cover"
+        src="/img.jpg"
+        alt=""
+      />
 
-          <div className="gap-1 w-fit flex ">
-            <button className="bg-[#589168] p-4 font-semibold rounded-md">Contact us</button>
-            <button className="bg-white p-4 font-semibold rounded-md" >Read more</button>
+      <div className="relative bg-transparent flex items-center justify-center h-full">
+        <div className=" flex justify-between gap-10 items-center">
+          <div className="flex flex-col gap-10">
+            <h1 className="text-7xl w-2/3  ">
+              Counseling For Your Better Life
+            </h1>
+            <p className="w-1/2 flex gap-3 ">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+
+            <div className="gap-1 w-fit flex ">
+              <button className="bg-[#589168] p-4 font-semibold rounded-md">
+                Contact us
+              </button>
+              <button className="bg-white p-4 font-semibold rounded-md">
+                Read more
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <button className="rounded-full bg-white p-5 ">
+              <CiPlay1 />
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-
 
     // <div className='flex flex-row relative overflow-clip w-screen h-lvh'>
 
@@ -68,8 +86,6 @@ function Banner() {
     //       }} className='text-6xl absolute bg-white right-0 top-1/2'><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><path fill="currentColor" d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17s-7.6 17-17 17m0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15s15-6.7 15-15s-6.7-15-15-15"/><path fill="currentColor" d="m24.7 34.7l-1.4-1.4l8.3-8.3l-8.3-8.3l1.4-1.4l9.7 9.7z"/><path fill="currentColor" d="M16 24h17v2H16z"/></svg></div>
     //     </div>
 
-
-
     // <div>
     //   <div className="flex-col relative overflow-clip w-screen ">
     //     <Carousel au>
@@ -82,7 +98,7 @@ function Banner() {
     //           )
     //         })
     //       }
-         
+
     //     </Carousel>
     //   </div>
 
