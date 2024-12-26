@@ -102,7 +102,7 @@ const WeCanHelp = () => {
                   return (
                     <div
                       key={i}
-                      onClick={() => selectedService == false}
+                      onClick={() => selectedService }
                       className={`cursor-pointer p-4 rounded-sm text-gray-800 font-semibold text-2xl  ${
                         selectedService === val.title
                           ? "bg-green-500 text-white"
