@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { CiPlay1 } from "react-icons/ci";
+import { FaPlay } from "react-icons/fa";
 
 function Banner() {
   const images = [
@@ -30,16 +30,16 @@ function Banner() {
   }
 
   return (
-    <div className="relative h-screen">
+    <div className="relative   h-lvh">
       <img
         className="h-screen fixed -z-10 top-0 left-0 w-full object-cover"
         src="/img.jpg"
         alt=""
       />
 
-      <div className="relative bg-transparent flex items-center justify-center h-full">
-        <div className=" flex justify-between gap-10 items-center">
-          <div className="flex flex-col gap-10">
+      <div className="relative bg-black bg-opacity-25 flex items-center justify-center h-full ">
+        <div className=" flex justify-between items-center   ">
+          <div className="flex flex-col gap-10 ">
             <h1 className="text-7xl w-2/3  ">
               Counseling For Your Better Life
             </h1>
@@ -58,9 +58,10 @@ function Banner() {
             </div>
           </div>
 
-          <div>
-            <button className="rounded-full bg-white p-5 ">
-              <CiPlay1 />
+          <div className="relative h-16 w-16 rounded-full ">
+            <div className="h-full w-full bg-green-500 rounded-full animate-ping absolute top-0 left-0"> </div>
+            <button className="h-full w-full relative  rounded-full bg-white flex items-center justify-center">
+              <FaPlay className="text-green-600" />
             </button>
           </div>
         </div>
