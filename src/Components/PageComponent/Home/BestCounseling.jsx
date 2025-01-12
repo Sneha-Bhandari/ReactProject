@@ -4,8 +4,8 @@ import { FaPlay } from "react-icons/fa";
 
 function BestCounseling() {
   return (
-    <div className='bg-white  '>
-    <div className='flex h-screen w-11/12 mx-auto '>
+    <div className='bg-white   '>
+    <div className='flex h-screen  mx-24 bg-pink-200 '>
     <div className='bg-gray-300 h-full w-1/2 '>
     
           <img

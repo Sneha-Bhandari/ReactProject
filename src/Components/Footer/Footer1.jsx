@@ -108,7 +108,6 @@ const foot= [
             socialmedia.map((val,i)=>{
               return(
                 <div className="bg-green-700 hover:scale-110 transition-all delay-75 duration-1000 ease-in-out text-2xl justify-center items-center flex rounded-full h-12 w-12">
-
                {val.icon}
         </div>
               )
