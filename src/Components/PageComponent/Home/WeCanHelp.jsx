@@ -52,7 +52,7 @@ function WeCanHelp() {
                   <div key={i} className=' relative flex h-fit text-xl  font-light '>
                     <button
                       onClick={() => setOpen(i)}
-                      className={`w-96 px-4 py-6 flex items-center rounded-md font-semibold border border-gray-500 ${open === i ? 'bg-green-600 text-white' : 'bg-white text-black'}`}
+                      className={`w-96 px-4 py-6 flex items-center rounded-md font-semibold border border-gray-500 ${open === i ? 'bg-[#589168] text-white' : 'bg-white text-black'}`}
                     >
                       {val.name}
                     </button>

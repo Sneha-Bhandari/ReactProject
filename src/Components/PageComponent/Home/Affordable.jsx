@@ -1,120 +1,62 @@
-import React from 'react'
+import React from "react";
 import { BiDollar } from "react-icons/bi";
+import { TiTick } from "react-icons/ti";
 
 const Affordable = () => {
-  const getStarted=[
+  const pricelist = [
     {
-      price:"$49",
-      title:"For Adults",
-      items:[
-        {
-          title:"Individual Counseling"
-        },
-        {
-          title:"Individual Counseling"
-        },
-        {
-          title:"Individual Counseling"
-        }
-      ],
-      buttons:"Get started"
-
+      amount: "$ 49 /mo",
+      title: "For Adults",
+      topic: "Individual Counseling ",
+      buttons: "Get Started",
     },
     {
-      price:"$79",
-      title:"For Children",
-      items:[
-        {
-          title:"Individual Counseling"
-        },
-        {
-          title:"Individual Counseling"
-        },
-        {
-          title:"Individual Counseling"
-        }
-      ],
-       buttons:"Get started"
-
+      amount: "$ 49 /mo",
+      title: "For Adults",
+      topic: "Individual Counseling",
+      buttons: "Get Started",
     },
     {
-      price:"$109",
-      title:"For Business",
-      items:[
-        {
-          title:"Individual Counseling"
-        },
-        {
-          title:"Individual Counseling"
-        },
-        {
-          title:"Individual Counseling"
-        }
-      ],
-      buttons:"Get started"
-
+      amount: "$ 49 /mo",
+      title: "For Adults",
+      topic: "Individual Counseling",
+      buttons: "Get Started",
     },
-
-
-
-    
-  ]
+  ];
   return (
-    <div className='bg-green-100 h-screen'>
-      <div className='flex flex-col p-16 bg-red-300 justify-center items-center  gap-4'>
-        <div className='text-sm text-green-900 tracking-wider font-bold'>Price & Plans</div>
-        <div className='text-4xl text-gray-800 font-bold tracking-wide '>Affordable Packages</div>
+    <div className="bg-gray-100 h-screen w-full flex flex-col ">
+      <div className="flex flex-col p-3  justify-center items-center mx-auto">
+        <div className="text-sm text-[#589168] tracking-wider font-bold  uppercase">
+          Price & Plans
+        </div>
+        <div className="text-4xl text-gray-800 font-bold tracking-wide ">
+          Affordable Packages
+        </div>
       </div>
-      {
-        // getStarted.map((val,i)=>{
-        //   return (
-        //     <div key={i}>
-        //       {val.price}
-        //         {val.title}
-        //         {/* {val.items} */}
-        //         {/* <button>
-        //           {val.buttons}
-        //         </button> */}
-        //     </div>
-        //   )
-        // })
-      }
 
-      <div>
+      <div className=" h-full w-full  mx-auto flex flex-col items-center justify-center">
         
+          <div className="flex gap-8 w-full h-full justify-center items-center mx-auto  ">
+            {pricelist.map((val, i) => {
+              return (
+                <div key={i} className="flex gap-3 border-gray-400 shadow-sm border-1 bg-white group ">
+                  <div className=" flex flex-col gap-3 px-20 py-12 group-hover:bg-gray-200 transition duration-300 group-hover:scale-105 transform ease-in-out  ">
+                    <div className="text-3xl text-[#589168]">{val.amount}</div>
+                    <div className="text-2xl font-bold tracking-tight">
+                      {val.title}
+                    </div>
+                    <div className="flex  gap-3 font-thin font-sans"> <h1><TiTick/></h1>{val.topic}</div>
+                    <div className="bg-[#589168] h-fit w-fit flex text-white p-2 cursor-pointer">{val.buttons}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-      <div className='bg-blue-200 h-2/3 w-1/3 mx-auto flex rounded-md shadow-md'>
-
-
-<div className=' flex w-full  h-1/3 flex-col border-b border-gray-300 mx-12 my-6 justify-center items-center gap-6 '>
-        <div className='flex flex-row  '>
-        <div className='text-gray-500 text-2xl'>< BiDollar/></div>
-        <div className='text-green-700 text-6xl font-bold'>49</div>
-        <div className='flex items-end'>/mo</div>
-        </div>
-        <div className='text-xl font-bold tracking-tight'>For Adults</div>
-        </div>
-
-        <div className='flex flex-col  '>
-        <div>Items</div>
-        <div>
-        <button>Get Started</button>
-        </div>
-        </div>
-
-
-       
-
-        
-
-      </div>
-     
    
-   
+  
+  );
+};
 
-
-    </div>
-  )
-}
-
-export default Affordable
+export default Affordable;

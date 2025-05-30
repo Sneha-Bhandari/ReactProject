@@ -4,7 +4,7 @@ import Header from './Header'
 
 function MainNav() {
   return (
-    <div>
+    <div className=' top-0 '>
       <Subheader />
       <Header />
     </div>

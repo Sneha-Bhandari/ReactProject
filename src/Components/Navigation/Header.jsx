@@ -54,7 +54,7 @@ const Header = () => {
       {
         navitem.map((val,i)=>{
           return(
-    <div className='hover:text-[#589168] flex items-center'>
+    <div key={i} className='hover:text-[#589168] flex items-center'>
     <Link to={val.path}> {val.title}</Link>
     </div>
           )

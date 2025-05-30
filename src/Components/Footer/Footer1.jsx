@@ -46,10 +46,10 @@ const foot= [
         title:"Blog",
         icon:<MdOutlineArrowForwardIos />
       }, {
-        title:"Privacy & Policy",
+        title:"Privacy",
         icon:<MdOutlineArrowForwardIos />
       }, {
-        title:"Term & Conditions",
+        title:"Conditions",
         icon:<MdOutlineArrowForwardIos />
       },
       ]
@@ -107,7 +107,7 @@ const foot= [
           {
             socialmedia.map((val,i)=>{
               return(
-                <div className="bg-green-700 hover:scale-110 transition-all delay-75 duration-1000 ease-in-out text-2xl justify-center items-center flex rounded-full h-12 w-12">
+                <div key={i} className="bg-[#589168] hover:scale-110 transition-all delay-75 duration-1000 ease-in-out text-2xl justify-center items-center flex rounded-full h-12 w-12">
                {val.icon}
         </div>
               )
@@ -117,31 +117,30 @@ const foot= [
         </div>
       </div>
 
-     {/* Mapping */}
-     {/* <div className="flex gap-12"> */}
+    
       {foot.map((value,index)=>{
       return <div key={index} className={` font-semibold w-fit grid h-56 ${index===foot.length-1?"col-span-2":"col-span-1"}`}>
-        <div className="text-xl font-semibold h-fit ">
+        <div className="text-xl font-medium h-fit ">
           {value.title}
         </div>
         <ol className="grid gap-5">
           {value.items.map((item, i)=>{
             return(
             <li key={i} className="text-sm flex items-center gap-3">
-             <span className="text-xl">{item.icon}</span> {item.title}
+             <span className="text-sm">{item.icon}</span> <h1 className="font-extralight">{item.title}</h1>
             </li>
             )
           })}
         </ol>
       </div>
       })}
-     {/* </div> */}
+    
 
     </div>
-{/* bottom footer */}
+
     <div className="bg-black py-8  w-full  ">
-      <div className="w-10/12 mx-auto text-gray-500 flex py-4">
-      Copyright ©2024 All rights reserved | This template is made with  <FaHeart/> by <span>Colorlib.com</span>
+      <div className="w-10/12 mx-auto text-gray-500 flex  justify-center items-center space-x-3 py-4">
+      <h1></h1>Copyright ©2024 All rights reserved | This template is made with  <FaHeart/> by <span className="text-white">Sneha Bhandari</span>
       </div>
 
     </div>
